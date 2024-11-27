@@ -6,9 +6,6 @@ Segmentation of Intracranial Aneurysm: A
 Coarse-to-Fine Framework Without Patch
 Division”**
 
-###Network
-![network](https://github.com/user-attachments/assets/574a9dfc-7ffa-4f74-b538-4d51515e1639)
-
 
 ### Result
 

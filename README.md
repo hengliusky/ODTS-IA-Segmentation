@@ -30,10 +30,9 @@ $ conda create --name odts python=3.9
 ```
 python3 predict.py -i /XXX/XXX/imagesTs -o /XXX/XXX/nnUNet_pred/ -d 606 -c 3d_fullres -f all
 
-
-
+```
 ### Citing
 
 If you use our work in your research, please cite us using the following entry ~ Thank you .
 
-```
+

@@ -63,7 +63,7 @@ If you use our work in your research, please cite us using the following entry ~
 
 ## Testing
 ### Focus stage
-1. Use `utils.focus_trainset_generator.py` to downsample the test samples with a target size of `[256, 256, 160]` after downsampling.
+1. Use `utils.focus_trainset_generator.py` to downsample the test samples to a target size of `[256, 256, 160]`.
 2. Obtain the focus cube based on the coarse segmentation resultof the focus stage, with a size of [128, 128, 128]
 
 ### Refinement stage

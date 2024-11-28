@@ -54,19 +54,17 @@ If you use our work in your research, please cite us using the following entry ~
 
 ## Training
 ### Focus stage
-1. Downsample all samples -utils.focus_trainset_generator.py
-   1. The downsampled size is [256, 256, 160]
-2. Train the network.
+1. Use `utils.focus_trainset_generator.py` to downsample the training samples with a target size of `[256, 256, 160]` after downsampling.
+2. Train the focuing network.
 
 ### Refinement stage
-1. Generate training data from the original data automatically - utils.refinement_generator.py
-   1. The generated size is [128, 128, 128]
-2. Train the network.
+1.Use `utils.refinement_generator.py` to generate training data from raw input data.
+2.Train the refinement network.
 
 ## Testing
 ### Focus stage
-1. Downsample the test samples -utils.focus_trainer_generator.py
-2. Obtain the focus cube based on the coarse segmentation result, with a size of [128, 128, 128]
+1. Use `utils.focus_trainset_generator.py` to downsample the test samples with a target size of `[256, 256, 160]` after downsampling.
+2. Obtain the focus cube based on the coarse segmentation resultof the focus stage, with a size of [128, 128, 128]
 
 ### Refinement stage
 1. Input the focus cube into the refinement network.

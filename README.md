@@ -54,12 +54,12 @@ If you use our work in your research, please cite us using the following entry ~
 
 ## Training
 ### Focus stage
-1. Use `utils.focus_trainset_generator.py` to downsample the training samples with a target size of `[256, 256, 160]` after downsampling.
+1. Use `utils.focus_trainset_generator.py` to downsample the training samples to a target size of `[256, 256, 160]`.
 2. Train the focuing network.
 
 ### Refinement stage
-1.Use `utils.refinement_generator.py` to generate training data from raw input data.
-2.Train the refinement network.
+1. Use `utils.refinement_generator.py` to generate training data from raw input data.
+2. Train the refinement network.
 
 ## Testing
 ### Focus stage

@@ -32,7 +32,7 @@ $ conda activate odts
 ### Dataset
 This study utilizes two IA medical image datasets from Wannan Medical College (WMC-AHUT) and Ma'anshan People's Hospital (MPH-AHUT).
 
-The datasets are not yet publicly available but are planned to be released soon. For access requests, please contact hengliusky@aliyun.com.
+The datasets are not yet publicly available but are planned to be released soon. If you need access, please send an email to hengliu@ahut.edu.cn to apply.
 
 
 ### Testing

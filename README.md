@@ -30,7 +30,7 @@ $ conda activate odts
 ```
 
 ### Dataset
-This study utilizes two IA medical image datasets - WMC-AHUT from Wannan Medical College and MPH-AHUT from Ma'anshan People's Hospital.
+This study collects two IA medical image datasets - WMC-AHUT from Wannan Medical College and MPH-AHUT from Ma'anshan People's Hospital.
 
 These datasets are not yet publicly available but are planned to be released soon. If you need access, please email hengliu@ahut.edu.cn to apply.
 
@@ -50,7 +50,7 @@ python3 predict.py
 If you use our work in your research, please cite us using the following entry ~ Thank you.
 
 
-# Overall network workflow
+# Overall workflow
 
 ## Training
 ### Focus stage

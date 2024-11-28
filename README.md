@@ -30,7 +30,7 @@ $ conda activate odts
 ```
 
 ### Dataset
-This study utilized two private datasets provided by Wannan Medical College (WMC-AHUT) and Ma'anshan People's Hospital (MPH-AHUT), focusing on intracranial aneurysms (IA).
+This study utilizes two IA medical image datasets from Wannan Medical College (WMC-AHUT) and Ma'anshan People's Hospital (MPH-AHUT).
 
 The datasets are not yet publicly available but are planned to be released in the near future.
 For access requests, please contact: hengliusky@aliyun.com.

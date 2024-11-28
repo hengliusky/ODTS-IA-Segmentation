@@ -6,7 +6,6 @@ Coarse-to-Fine Framework Without Patch
 Division”**
 
 
-
 ### Result
 
 Result1:
@@ -23,14 +22,18 @@ Result2:
 
 ### Environment
 
-Pytorch 1.9.0, Python 3.9
+Pytorch 2.0.1, Python 3.9
 
 ```
 $ conda create --name odts python=3.9
 $ conda activate odts
 ```
 
+### Dataset
+This study utilized two private datasets provided by Wannan Medical College (WMC-AHUT) and Ma'anshan People's Hospital (MPH-AHUT), focusing on intracranial aneurysms (IA).
 
+The datasets are not yet publicly available but are planned to be released in the near future.
+For access requests, please contact: hengliusky@aliyun.com.
 
 ### Testing
 
@@ -48,32 +51,26 @@ python3 predict.py
 If you use our work in your research, please cite us using the following entry ~ Thank you.
 
 
+# Overall network workflow
 
+## Training
+### Focus stage
+1. Downsample all samples -utils.focus_trainset_generator.py
+   1. The downsampled size is [256, 256, 160]
+2. Train the network.
 
+### Refinement stage
+1. Generate training data from the original data automatically - utils.refinement_generator.py
+   1. The generated size is [128, 128, 128]
+2. Train the network.
 
+## Testing
+### Focus stage
+1. Downsample the test samples -utils.focus_trainer_generator.py
+2. Obtain the focus cube based on the coarse segmentation result, with a size of [128, 128, 128]
 
-
-
-# 网络整体工作流程
-
-## 网络训练
-### 聚焦阶段
-1. 全部将样本进行下采样——utils.focus_trainset_generator.py
-   1. 下采样的尺寸为[256, 256, 160]
-2. 对网络进行训练
-
-### 精炼阶段
-1. 训练数据由原始数据自动生成-utils.refinement_generator.py
-   1. 生成的尺寸为[128, 128, 128]
-2. 对网络进行训练
-
-## 测试阶段
-### 聚焦阶段
-1. 对测试样本进行下采样-utils.focus_trainer_generator.py
-2. 根据粗分割结果获得聚焦框，聚焦框的尺寸为[128, 128, 128]
-
-### 精炼阶段
-1. 将聚焦框送入精炼网络
-2. 获得最终结果
+### Refinement stage
+1. Input the focus cube into the refinement network.
+2. Obtain the final results.
 
 

@@ -1,3 +1,59 @@
+# ODTS-IA-Segmentation
+
+**This repository is for the paper, “Orthogonal Dual-Path Transformers for Accurate
+Segmentation of Intracranial Aneurysm: A
+Coarse-to-Fine Framework Without Patch
+Division”**
+
+
+
+### Result
+
+Result1:
+
+![WMC](https://github.com/user-attachments/assets/ba4bb2e7-2e1e-4872-a6e2-dfea1b10e1d2)
+
+
+Result2:
+
+![MPH](https://github.com/user-attachments/assets/7989eea4-4319-4dbc-883a-ca05bbe4da11)
+
+
+
+
+### Environment
+
+Pytorch 1.9.0, Python 3.9
+
+```
+$ conda create --name odts python=3.9
+$ conda activate odts
+```
+
+
+
+### Testing
+
+```
+python3 predict.py
+-i imagesTs
+-o nnUNet_pred
+-d 606 -c 3d_fullres -f all
+```
+
+
+
+### Citing
+
+If you use our work in your research, please cite us using the following entry ~ Thank you.
+
+
+
+
+
+
+
+
 # 网络整体工作流程
 
 ## 网络训练
